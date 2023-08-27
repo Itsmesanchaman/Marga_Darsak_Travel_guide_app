@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "172845680309",
+    "project_id": "marga-darsak",
+    "storage_bucket": "marga-darsak.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172845680309:android:f476ecb2d224820b4160fc",
+        "android_client_info": {
+          "package_name": "com.example.autoimageslider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172845680309-uvdaqsdacvhhs2kgshvib43gssds0fv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS43M4x4gS5MXa5cIHEtvxhjdmqgZrVbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "172845680309-uvdaqsdacvhhs2kgshvib43gssds0fv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

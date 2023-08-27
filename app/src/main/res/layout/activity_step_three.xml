@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StepThree">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/pyt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:id="@+id/plantripId"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plantripId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#046057"
+        android:id="@+id/cardviewId"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/step_3of4"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/seekbarId"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardviewId"
+        android:text="@string/trip_of_your_choice"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/dark_green"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/plantextId"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plantextId"
+        android:id="@+id/radioGroup"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdButtonOneId"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            />
+
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdButtonTwoId"
+            android:layout_marginStart="40dp"
+            />
+
+
+    </RadioGroup>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_have_my_preferred_trip"
+        android:layout_below="@id/plantextId"
+        android:layout_marginTop="52dp"
+        android:layout_marginStart="75dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_i_need_your_expert_help"
+        android:layout_below="@id/plantextId"
+        android:layout_marginTop="102dp"
+        android:layout_marginStart="75dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/needId"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/where_you_want_to_visit"
+        android:layout_marginStart="40dp"
+        android:layout_below="@+id/needId"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:id="@+id/wherevisitId"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/whereVisitLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/wherevisitId"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/visitWhereEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/describe_below"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="450dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="470dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:inputType="text"
+            android:gravity="start"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="650dp"
+        android:text="@string/con"
+        android:textAllCaps="false"
+        android:backgroundTint="#16AC9E"
+        android:textColor="@color/white"
+        android:id="@+id/NextToId"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_your_trip"
+        android:layout_marginStart="40dp"
+        android:layout_below="@+id/needId"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:id="@+id/SelectTripId"
+        android:visibility="gone"
+        />
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_below="@+id/SelectTripId"
+            android:id="@+id/tripSelectId"
+            android:visibility="gone"
+            android:background="@drawable/custom_spinner_background"
+            />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_home"
+        android:title="@string/home"
+        android:icon="@drawable/house"/>
+
+    <item
+        android:id="@+id/bottom_search"
+        android:title="@string/search"
+        android:icon="@drawable/search" />
+
+    <item
+        android:id="@+id/bottom_plan"
+        android:title="@string/plan"
+        android:icon="@drawable/heart"/>
+
+    <item
+        android:id="@+id/bottom_account"
+        android:title="@string/paf"
+        android:icon="@drawable/user"/>
+
+</menu>

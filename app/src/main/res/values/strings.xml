@@ -1,0 +1,209 @@
+<resources>
+    <string name="app_name">मार्ग दर्शक</string>
+    <string name="Button">Get Started</string>
+    <string name="Textview1">Lets make</string>
+    <string name="Textview2">Your dream</string>
+    <string name="Textview3">Vacation</string>
+
+    <string name="home">Explore</string>
+    <string name="search">Search</string>
+    <string name="account">Account</string>
+    <string name="plan">Plan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello,</string>
+    <string name="shint">Where to?</string>
+    <string name="nby">Nearby experiences</string>
+    <string name="txt1">Hotels</string>
+    <string name="trips">Adventure</string>
+    <string name="txt3">Popular destination</string>
+    <string name="txt5">users</string>
+    <string name="txt6">Best Place To Visit In</string>
+
+
+    <!-- Strings related to login -->
+    <string name="action_sign_in">Sign up</string>
+    <string name="login">Log in</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Continue with Google</string>
+    <string name="top">photo</string>
+    <!-- Strings related to login -->
+    <string name="prompt_password">Password</string>
+    <string name="saves">Saves</string>
+    <string name="Btn">backBtn</string>
+    <string name="place">Explore The Best Destination</string>
+    <string name="savesimg">Saves places you\'d like to visit</string>
+    <string name="savestxt">See your saves on a map</string>
+    <string name="nametrip">Trip name</string>
+    <string name="btnsavetrip">Create a Trip</string>
+    <string name="tripto">E.g. Weekend in Pokhara.</string>
+    <string name="splash">All rights are reserved©2023</string>
+    <string name="cancel">Cancel</string>
+    <string name="previous">Previous</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="tosave">Save your favorites, plan your trip</string>
+    <string name="username">Username</string>
+    <string name="don_t_have_an_account">Don\'t have account?</string>
+    <string name="register_here">Click here to Register.</string>
+    <string name="or_log_in_with">OR</string>
+    <string name="register_hereok">Register here</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_out">Sign out</string>
+    <string name="mardi">The Mardi Himal trek is a challenging and beautiful 4-day route in the Annapurna region that offers breathtaking views of the Himalayan mountain range. It’s a lesser-known route compared to the famous Everest Base Camp trek or Annapurna Circuit trek.</string>
+    <string name="ad">Popular adventure</string>
+    <string name="pop">Popular destination to visit</string>
+    <string name="plan_my_trip">Plan my trip</string>
+    <string name="paa">Paragliding</string>
+    <string name="ref">Rafting</string>
+    <string name="bungee">Bungee</string>
+    <string name="paf">Profile</string>
+    <string name="dex">Description</string>
+    <string name="view_map">Itinerary</string>
+    <string name="mardi_himal">Mardi Himal</string>
+    <string name="view">View Map</string>
+
+    <string name="incorrect_password">Incorrect password</string>
+    <string name="please_enter_a_username">Please enter a username</string>
+    <string name="passthisword">Please enter a password</string>
+    <string name="incorrect_username">Incorrect username</string>
+
+
+    <string name="user">User</string>
+    <string name="ps">Profile</string>
+    <string name="setting">Setting</string>
+    <string name="ab">About us</string>
+    <string name="th">Trip Histrory</string>
+    <string name="dayone">Mardi Himal Trek Itinerary</string>
+    <string name="day_1">Day 1:\nPokhara to Kande </string>
+    <string name="at_kande">Kande to Pittam Deurali</string>
+    <string name="daytwo">Day 2:\nPittam Deurali to Low Camp</string>
+    <string name="daythree">Day 3:\nLow Camp to High Camp</string>
+    <string name="dayfour">Day 4:\nHigh Camp to Base Camp and Base Camp to Low Camp</string>
+    <string name="dayfive">Day 5:\nLow Camp to Sidhing to Pokhara(by jeep)</string>
+    <string name="trek_itinerary_map">Trek Itinerary Map</string>
+    <string name="mm">NAME</string>
+    <string name="em">EMAIL</string>
+    <string name="ea">Email address</string>
+    <string name="accommodation_include">Accommodation included:\nLodge</string>
+    <string name="gv">On the way:</string>
+    <string name="gh">Hotel</string>
+    <string name="tt">Teahouse</string>
+    <string name="lh">Accommodation include:\nHotel</string>
+    <string name="hgh">Accommodation include:\nGuest House</string>
+    <string name="Top">Sidhing To Pokhara</string>
+    <string name="where_does_the_trek_start">Where does the trek start?</string>
+    <string name="marditrk">The Mardi Himal trek starts in Kande and finishes in Siding. It’s the standard route to Mardi Himal, trekkers who come from Pokhara or Kathmandu usually do it this way.</string>
+    <string name="when_is_the_best_time_for_trekking">When is the best time for trekking?</string>
+    <string name="whento">April and October are considered to be the peak hiking season when you get the best weather conditions as a result all trekking routes are very busy. We always try to hike in border season; March or November. There are significantly fewer people but sometimes you can be quite unlucky with the weather.</string>
+    <string name="are_you_planning_a_trip">Are You Planning A Trip?</string>
+    <string name="to">Plan My Trip</string>
+    <string name="pyt">PLAN YOUR TRIP</string>
+    <string name="first">Step 1of4</string>
+    <string name="how_will_you_be_travelling">How Will You Be Travelling?</string>
+    <string name="travelling_solo">Travelling Solo</string>
+    <string name="travelling_couple">Travelling Couple</string>
+    <string name="family_travelling">Family Travelling</string>
+    <string name="group_travelling">Group Travelling</string>
+    <string name="how_it_works">How it works?</string>
+    <string name="_1">1</string>
+    <string name="details">Send across your details and update us with your travel plans.</string>
+    <string name="submit_your_travel_plan">Submit your travel plan</string>
+    <string name="_2">2</string>
+    <string name="get_an_expert_s_help">Get an expert\'s help</string>
+    <string name="tc">Get connected with our Travel Consultant who will help you plan your holiday.</string>
+    <string name="con">Continue</string>
+    <string name="two">Step 2of4</string>
+    <string name="when_do_you_plan_to_travel">When Do You Plan To Travel?</string>
+    <string name="i_have_my_date">I have My Date</string>
+    <string name="no_still_planning">No Still Planning</string>
+    <string name="i_have_approx_date">I have Approx. Date</string>
+    <string name="back">Back</string>
+
+
+    <string name="step_3of4">Step 3of4</string>
+    <string name="trip_of_your_choice">Trip Of Your Choice</string>
+    <string name="i_have_my_preferred_trip">I have my preferred trip</string>
+    <string name="no_i_need_your_expert_help">No, I need your expert help</string>
+    <string name="where_you_want_to_visit">Where you want to visit?</string>
+    <string name="describe_below">Describe below</string>
+    <string name="select_your_trip">Select your Trip:</string>
+    <string name="select_your_departure_date">select your departure date</string>
+    <string name="select_your_arrival_date">Select your arrival date</string>
+    <string name="pick_your_trip_end_date">Pick your trip end date</string>
+    <string name="pick_your_trip_start_date">Pick your trip start date</string>
+    <string name="chld">No. of child</string>
+    <string name="step_4of4">Step 4of4</string>
+    <string name="your_personal_information">Your Personal Information</string>
+    <string name="save">You are logged in.Saved Data will be used</string>
+    <string name="sub">Submit</string>
+    <string name="no_of_adult">No. of adult</string>
+    <string name="iu">Incorrect username</string>
+    <string name="ip">Incorrect password</string>
+    <string name="oo">Search</string>
+    <string name="no_result">No result</string>
+    <string name="sk">Skip</string>
+    <string name="customize_this_trip">Customize This Trip</string>
+    <string name="nt">Not Satisfied with this itinerary?</string>
+    <string name="contact">Customize this trip with the help from our local travel specialist that matches your interest.</string>
+    <string name="ttr">Customize Your Trip</string>
+    <string name="our_travel_specialist_can_help_you_plan_your_adventure_just_get_in_touch">Our travel specialist can help you plan your adventure. Just get in touch!</string>
+    <string name="tn">Trip Name: Mardi Himal</string>
+    <string name="fn">Full Name*</string>
+    <string name="e_mail">E-Mail*</string>
+    <string name="phone_number">Phone Number*</string>
+    <string name="message">Message</string>
+    <string name="mit">Submit</string>
+    <string name="submitted_successfully">Submitted successfully</string>
+    <string name="gg">Back</string>
+    <string name="a">Plan</string>
+    <string name="favorites">Favorites</string>
+    <string name="you_don_t_have_any_plan">You don\'t have any plan</string>
+    <string name="you_don_t_have_any_favorites">You don\'t have any favorites</string>
+    <string name="don_t_have_account">Don\'t have an account?\n</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="new_password">New Password</string>
+    <string name="reset_your_password">Reset your password</string>
+    <string name="reset">Reset</string>
+    <string name="email">Email</string>
+
+
+    //API KEY
+
+    <string name="maps_api_key">AIzaSyBPbCWKYJpMtFZ9xC-r8vj_KFTXeabap74</string>
+    <string name="google_places_key" templateMergeStrategy="preserve" translatable="false">AIzaSyD578hsDRR1WGZaO6Rm1WBaVFSanBOqYQI</string>
+    <string name="log_in_as_admin">Log in as admin</string>
+    <string name="add_image">add image</string>
+    <string name="description">Description</string>
+    <string name="plus">+</string>
+    <string name="detailed_itinerary">detailed itinerary</string>
+    <string name="add_day">add day</string>
+    <string name="delete">delete</string>
+    <string name="add_to">add to</string>
+    <string name="one_day">Day 1</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="add_place">Add place</string>
+    <string name="trip_message">Trip message</string>
+    <string name="select_a_season">Select a Season</string>
+    <string name="spring">Spring</string>
+    <string name="confirm">Confirm</string>
+    <string name="winter">Winter</string>
+    <string name="summer">Summer</string>
+    <string name="autumn">Autumn</string>
+    <string name="annapurna_base_camp">Annapurna Base Camp</string>
+    <string name="annapurnades">The Annapurna Base Camp is a popular trekking route in the mountains of Nepal.The route to Annapurna base camp passes through various villages and viewpoints such as Australian Camp, Sinwa, Ghandruk, Landruk and Deurali.There are other routes to visit the Annapurna Base Camp as well.
+    </string>
+    <string name="topker">Day 1: Kathmandu to Pokhara (By flight or Bus)</string>
+    <string name="tonaya">Day 2: Drive to Nayapul and trek to Ulleri</string>
+    <string name="toGhore">Day 3: Trek to Ghorepani</string>
+    <string name="sunrise">Day 4: Early trek to Poon Hill for Sunrise, Back to Ghorepani and Trek to Tadapani</string>
+    <string name="tada">Day 5: Tadapani to Chomrong</string>
+    <string name="dobhan">Day 6: Chomrong to Dobhan (Dovan)</string>
+    <string name="dovan">Day 7: Dovan to Deurali</string>
+    <string name="mbc">Day 8: Deurali to Machhapuchhre Base Camp (MBC)</string>
+    <string name="ABC">Day 9: MBC to Annapurna Base Camp</string>
+    <string name="bamboo">Day 10: Trek to Bamboo</string>
+    <string name="hot">Day 11: Trek to Jhinudanda (Hot spring in Jhinudanda)</string>
+    <string name="To">Day 12: Jhinu Danda to Pothana/Jhinu Danda to Ghandruk</string>
+    <string name="drive">Day 13: Pothana to Phedi and drive to Pokhara/ Ghandruk to Nayapul and drive to Pokhara</string>
+
+
+</resources>

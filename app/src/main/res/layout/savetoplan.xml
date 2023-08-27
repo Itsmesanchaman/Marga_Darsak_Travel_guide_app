@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/previous"
+        android:id="@+id/backtoh"
+        android:contentDescription="@string/previous" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tosave"
+        android:textColor="@color/black"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/lke"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/trips" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/savesimg"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="123dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:src="@drawable/pin"
+        android:contentDescription="@string/trips"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/savestxt"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="163dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nametrip"
+        android:layout_marginTop="200dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textInputEditText"
+            android:hint="@string/tripto"
+            />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_marginStart="45dp"
+        android:text="@string/btnsavetrip"
+        android:backgroundTint="@color/black"
+        android:id="@+id/saveButton"
+        />
+
+</RelativeLayout>

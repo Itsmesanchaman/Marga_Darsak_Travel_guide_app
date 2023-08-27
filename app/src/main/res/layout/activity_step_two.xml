@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StepTwo">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/pyt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:id="@+id/plantripId"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plantripId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#046057"
+        android:id="@+id/cardviewId"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/two"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/seekbarId"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardviewId"
+        android:text="@string/when_do_you_plan_to_travel"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/dark_green"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/plantextId"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:background="@drawable/button_background_selected"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        tools:ignore="RtlSymmetry"
+        android:layout_below="@+id/planningId"
+        android:textStyle="bold"
+        android:drawableTop="@drawable/watch"
+        android:paddingTop="20dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="@string/i_have_my_date"
+        android:id="@+id/ownDateId"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:background="@drawable/button_background_selected"
+        android:layout_marginTop="40dp"
+        tools:ignore="RtlSymmetry"
+        android:layout_below="@+id/planningId"
+        android:textStyle="bold"
+        android:drawableTop="@drawable/approx"
+        android:paddingTop="20dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="@string/i_have_approx_date"
+        android:id="@+id/approxDateId"
+        android:layout_marginStart="200dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background_selected"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="60dp"
+        tools:ignore="RtlSymmetry"
+        android:textStyle="bold"
+        android:drawableTop="@drawable/calendar"
+        android:paddingTop="20dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="@string/no_still_planning"
+        android:id="@+id/planningId"
+        android:layout_below="@+id/plantextId"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="650dp"
+        android:text="@string/con"
+        android:textAllCaps="false"
+        android:backgroundTint="#16AC9E"
+        android:textColor="@color/white"
+        android:id="@+id/continueId"
+        android:layout_marginStart="270dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="650dp"
+        android:text="@string/back"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/Orange"
+        android:textColor="@color/black"
+        android:id="@+id/BackId"
+
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/owndateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="465dp"
+        android:visibility="gone"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ownDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/select_your_departure_date"
+            />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dateOwnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@+id/owndateLayout"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateOwnEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/select_your_arrival_date"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/approxDateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="465dp"
+        android:visibility="gone"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/approxDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/pick_your_trip_start_date"
+            />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dateApproxLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@+id/approxDateLayout"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateApproxEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/pick_your_trip_end_date"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</RelativeLayout>

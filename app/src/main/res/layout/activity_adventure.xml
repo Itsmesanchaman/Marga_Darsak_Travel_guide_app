@@ -1,0 +1,133 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Adventure">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent"
+        android:id="@+id/frameId"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/previous"
+            android:id="@+id/backToH"
+            android:contentDescription="@string/previous"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textColor="@color/black"
+            android:text="@string/ad"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="18dp"
+            />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frameId"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+    <!-- TextView for Adventure List Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/paa"
+        android:id="@+id/adventureLabel"
+        android:gravity="center_horizontal"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@color/Lavender"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <!-- RecyclerView for Adventure List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Adlist"
+        android:layout_below="@id/adventureLabel"
+        android:orientation="horizontal"
+        />
+
+    <!-- TextView for Reference Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ref"
+        android:id="@+id/referenceLabel"
+        android:gravity="center_horizontal"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@color/Lavender"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Adlist"
+        />
+
+    <!-- RecyclerView for Reference -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rafId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/referenceLabel"
+        />
+
+    <!-- TextView for Bungee Jumping Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bungee"
+        android:id="@+id/bungeeLabel"
+        android:gravity="center_horizontal"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@color/Lavender"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/rafId"
+        />
+
+    <!-- RecyclerView for Bungee Jumping -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bungeeId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/bungeeLabel"
+        android:orientation="horizontal"
+        />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

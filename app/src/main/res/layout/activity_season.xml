@@ -1,0 +1,43 @@
+<!-- activity_season.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="410dp"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/seasonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        >
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/previous"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/Btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/place"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</RelativeLayout>

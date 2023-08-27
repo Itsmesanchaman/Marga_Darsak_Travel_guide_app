@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/framePfId"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/paf"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/users"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/accountImg"
+            android:contentDescription="@string/account"
+            />
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:id="@+id/linearId"
+        android:layout_below="@+id/framePfId"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/acountProfileId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btn_background"
+            android:drawableStart="@drawable/userprofile"
+            android:paddingStart="20dp"
+            android:text="@string/ps"
+            android:textAllCaps="false"
+            tools:ignore="RtlSymmetry"
+            android:paddingEnd="20dp"
+            android:textSize="18sp"
+            android:drawablePadding="20dp"
+            android:drawableEnd="@drawable/skip"
+            android:textAlignment="viewStart"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btn_background"
+            android:drawableStart="@drawable/asettings"
+            android:paddingStart="20dp"
+            android:text="@string/setting"
+            android:textAllCaps="false"
+            tools:ignore="RtlSymmetry"
+            android:paddingEnd="20dp"
+            android:textSize="18sp"
+            android:drawablePadding="20dp"
+            android:drawableEnd="@drawable/skip"
+            android:textAlignment="viewStart"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btn_background"
+            android:drawableStart="@drawable/history"
+            android:paddingStart="20dp"
+            android:text="@string/th"
+            android:textAllCaps="false"
+            tools:ignore="RtlSymmetry"
+            android:paddingEnd="20dp"
+            android:textSize="18sp"
+            android:drawablePadding="20dp"
+            android:drawableEnd="@drawable/skip"
+            android:textAlignment="viewStart"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btn_background"
+            android:drawableStart="@drawable/account"
+            android:paddingStart="20dp"
+            android:text="@string/ab"
+            android:textAllCaps="false"
+            tools:ignore="RtlSymmetry"
+            android:paddingEnd="20dp"
+            android:textSize="18sp"
+            android:drawablePadding="20dp"
+            android:drawableEnd="@drawable/skip"
+            android:textAlignment="viewStart"
+            />
+
+
+    </LinearLayout>
+  
+
+
+
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/linearId"
+        android:layout_marginTop="60dp"
+        android:text="@string/sign_out"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/signOutId"
+        android:backgroundTint="@color/black"
+        />
+
+
+
+
+
+</RelativeLayout>

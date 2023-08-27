@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.autoimageslider"
+    tools:ignore="CoarseFineLocation">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AutoImageSlider"
+        tools:targetApi="31">
+        <activity
+            android:name=".PlaceDetails.Annapurna"
+            android:exported="false" />
+        <activity
+            android:name=".ForAdmin.TripMessage"
+            android:exported="false" />
+        <activity
+            android:name=".ForAdmin.Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ForAdmin.AdminDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ForAdmin.SignInPageForAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".CustomizeTrip"
+            android:exported="false" />
+        <activity
+            android:name=".StepFour"
+            android:exported="false" />
+        <activity
+            android:name=".StepTwo"
+            android:exported="false" />
+        <activity
+            android:name=".StepThree"
+            android:exported="false" />
+        <activity
+            android:name=".PlanMyTrip"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".ViewMap"
+            android:exported="true" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_api_key" />
+
+        <activity
+            android:name=".PopularDestination"
+            android:exported="false" />
+        <activity
+            android:name=".Adventure"
+            android:exported="true" />
+        <activity
+            android:name=".Plan"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".SignInPage"
+            android:exported="false"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".SeasonActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WithEmail"
+            android:exported="false" />
+        <activity
+            android:name=".SearchResultView"
+            android:exported="true" />
+        <activity
+            android:name=".SaveToPlan"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceList"
+            android:exported="true" />
+        <activity
+            android:name=".PlaceDetailsActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

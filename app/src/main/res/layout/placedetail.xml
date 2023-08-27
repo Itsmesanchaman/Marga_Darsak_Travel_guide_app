@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/FrameLayoutId"
+        >
+
+        <ImageView
+            android:id="@+id/backtoS"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/previous"
+            android:src="@drawable/previous"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/heart"
+            android:background="@drawable/circle_shape"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/saveBtn"
+            android:contentDescription="@string/saves"
+            />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/FrameLayoutId"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="410dp"
+            android:layout_height="match_parent"
+            >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:id="@+id/sccId"
+            >
+
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/muk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/facebook"
+                android:scaleType="fitXY"
+                app:iss_auto_cycle="true"
+                app:iss_delay="2000"
+                app:iss_period="2000"
+                tools:ignore="MissingConstraints" />
+
+
+        </FrameLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/mardi_himal"
+        android:layout_below="@+id/sccId"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dex"
+        android:layout_marginTop="370dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:textSize="19sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mardi"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/black"
+        android:id="@+id/imgDes"
+        />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_map"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/viewMapId"
+            android:layout_below="@+id/imgDes"
+            />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewMapId"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/fmId"
+        >
+
+        <fragment
+            android:id="@+id/mapFragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            />
+
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:background="@drawable/search_view_bg"
+          android:text="@string/view"
+          android:layout_marginStart="120dp"
+          android:layout_marginTop="40dp"
+          android:backgroundTint="@color/black"
+          android:textColor="@color/white"
+          android:id="@+id/viewmapId"
+          />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_below="@+id/fmId"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginTop="20dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dayone"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/iconImageView"
+            android:src="@drawable/down"
+            android:layout_marginStart="325dp"
+            android:visibility="visible"
+            android:contentDescription="@string/username"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/number"
+            android:layout_marginTop="50dp"
+            android:visibility="gone"
+            android:id="@+id/oneId"
+            android:contentDescription="@string/username"
+            />
+
+        <TextView
+            android:id="@+id/day1TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day_1"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ellipse1ImageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="70dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+        <ImageView
+            android:id="@+id/ellipse2ImageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="90dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <ImageView
+            android:id="@+id/recordButton1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/trekking"
+            android:layout_marginTop="113dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/at_kande"
+            android:layout_marginTop="113dp"
+            android:layout_marginStart="25dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/doublebed"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="140dp"
+            android:id="@+id/AccId"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="140dp"
+            android:text="@string/accommodation_include"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/txt3"
+            android:visibility="gone"
+            />
+
+
+
+
+        <ImageView
+            android:id="@+id/ellipse3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="120dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+        <ImageView
+            android:id="@+id/ellipse4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="140dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+        <ImageView
+            android:id="@+id/ellipse5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="160dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+        <ImageView
+            android:id="@+id/ellipse15"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="180dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/numbertwo"
+            android:layout_marginTop="220dp"
+            android:contentDescription="@string/username"
+            android:visibility="gone"
+            android:id="@+id/imgh"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="220dp"
+            android:textColor="@color/black"
+            android:text="@string/daytwo"
+            android:layout_marginStart="25dp"
+            android:id="@+id/gvhotel"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/doublebed"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="260dp"
+            android:id="@+id/AccIdL"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="260dp"
+            android:text="@string/lh"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/txt3l"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ellipse16"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="260dp"
+            android:contentDescription="@string/username"
+            android:src="@drawable/ellipse"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ellipse17"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="280dp"
+            android:contentDescription="@string/username"
+            android:src="@drawable/ellipse"
+            android:visibility="gone" />
+
+
+
+
+        <ImageView
+            android:id="@+id/Numbertwo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/road"
+            android:layout_marginTop="300dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+        <TextView
+            android:id="@+id/textviewDay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="@string/gv"
+            android:layout_marginTop="300dp"
+            android:layout_marginStart="25dp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/Numbertwoi"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/breakfast"
+            android:layout_marginTop="330dp"
+            android:layout_marginStart="20dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <TextView
+            android:id="@+id/textviewDay2On"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="@string/gh"
+            android:layout_marginTop="330dp"
+            android:layout_marginStart="50dp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/tea"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="360dp"
+            android:id="@+id/AccmmId"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <TextView
+            android:id="@+id/textviewDay2tea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="@string/tt"
+            android:layout_marginTop="360dp"
+            android:layout_marginStart="50dp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ellipse18"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="320dp"
+            android:contentDescription="@string/username"
+            android:src="@drawable/ellipse"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ellipse19"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="340dp"
+            android:contentDescription="@string/username"
+            android:src="@drawable/ellipse"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ellipse20"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="360dp"
+            android:contentDescription="@string/username"
+            android:src="@drawable/ellipse"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ellipse21"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="380dp"
+            android:contentDescription="@string/username"
+            android:src="@drawable/ellipse"
+            android:visibility="gone" />
+
+
+
+
+        <ImageView
+            android:id="@+id/ellipse7"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="200dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <ImageView
+            android:id="@+id/ellipse8"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="240dp"
+            android:contentDescription="@string/username"
+            android:src="@drawable/ellipse"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/ellipse9"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/numberthree"
+            android:layout_marginTop="400dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <TextView
+            android:id="@+id/textViewday3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/daythree"
+            android:layout_marginTop="400dp"
+            android:layout_marginStart="25dp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/doublebed"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="440dp"
+            android:id="@+id/AccIdH"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="440dp"
+            android:text="@string/hgh"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/txt3H"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ellipse10"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="420dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+        <ImageView
+            android:id="@+id/ellipse11"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="440dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+        <ImageView
+            android:id="@+id/ellipse22"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="460dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <ImageView
+            android:id="@+id/NumbertwoW"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/road"
+            android:layout_marginTop="480dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <TextView
+            android:id="@+id/textviewDay2W"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="@string/gv"
+            android:layout_marginTop="480dp"
+            android:layout_marginStart="25dp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/tea"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="510dp"
+            android:id="@+id/AccmmIdw"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <TextView
+            android:id="@+id/textviewDay2teaw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="@string/tt"
+            android:layout_marginTop="510dp"
+            android:layout_marginStart="50dp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/NumberFour"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/numberfour"
+            android:layout_marginTop="560dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <TextView
+            android:id="@+id/textViewday4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="560dp"
+            android:layout_marginStart="25dp"
+            android:text="@string/dayfour"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ellipse12"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="580dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+        <ImageView
+            android:id="@+id/ellipse13"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="600dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+        <ImageView
+            android:id="@+id/ellipse14"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="500dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <ImageView
+            android:id="@+id/ellipse23"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="520dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <ImageView
+            android:id="@+id/ellipse24"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="540dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <ImageView
+            android:id="@+id/ellipse25"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="620dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <ImageView
+            android:id="@+id/ellipse26"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="640dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <ImageView
+            android:id="@+id/numberFive"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/numberfive"
+            android:layout_marginTop="660dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <TextView
+            android:id="@+id/textViewday5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="660dp"
+            android:layout_marginStart="25dp"
+            android:text="@string/dayfive"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ellipse27"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="680dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+        <ImageView
+            android:id="@+id/ellipse28"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ellipse"
+            android:layout_marginTop="700dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <ImageView
+            android:id="@+id/jeep"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/jeep"
+            android:layout_marginTop="720dp"
+            android:visibility="gone"
+            android:contentDescription="@string/username"
+            />
+
+        <TextView
+            android:id="@+id/toPokhara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="720dp"
+            android:layout_marginStart="25dp"
+            android:text="@string/Top"
+            android:visibility="gone"
+            />
+
+
+    </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/mapLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/frameLayout"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trek_itinerary_map"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/iconImageView1"
+                    android:src="@drawable/down"
+                    android:layout_marginStart="325dp"
+                    android:visibility="visible"
+                    android:contentDescription="@string/username"
+                    />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:src="@drawable/mardihimaltrekkingmap"
+                    android:layout_marginTop="45dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/trekMapId"
+                    android:visibility="gone"
+                    android:contentDescription="@string/username"
+                    />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/mapLayout"
+                android:layout_marginTop="15dp"
+                android:text="@string/where_does_the_trek_start"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:id="@+id/trekstartId"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trekstartId"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:text="@string/marditrk"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/trekId"
+                tools:ignore="TooManyViews" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trekId"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="@string/when_is_the_best_time_for_trekking"
+                android:id="@+id/whenId"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_below="@+id/whenId"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/whento"
+                android:id="@+id/whentoId"
+                />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/customizeTripId"
+                android:layout_marginTop="15dp"
+                android:background="@color/huss"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/are_you_planning_a_trip"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/to"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="105dp"
+                    android:backgroundTint="@color/Orange"
+                    android:id="@+id/planMyTripId"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:textAllCaps="false"
+                    />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/whentoId"
+                android:id="@+id/customizeTripId"
+                android:layout_marginTop="20dp"
+                android:background="@color/huss"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nt"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_marginStart="10dp"
+                    />
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/Orange"
+                    android:text="@string/customize_this_trip"
+                    android:id="@+id/tripCustomizeId"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    />
+
+
+
+            </FrameLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

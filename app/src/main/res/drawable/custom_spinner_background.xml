@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:drawable="@drawable/button_background_selected" />
+
+    <!-- Position the down arrow icon at the end -->
+    <item
+        android:drawable="@drawable/down"
+        android:gravity="end|center_vertical"
+        android:right="10dp"
+        />
+</layer-list>

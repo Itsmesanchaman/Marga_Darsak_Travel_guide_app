@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForAdmin.TripMessage">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#E1DCDC"
+        tools:ignore="UselessParent"
+        android:id="@+id/tripId"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/previous"
+            android:id="@+id/backToDashboardId"
+            android:contentDescription="@string/username" />
+
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tripId"
+        android:layout_marginTop="10dp"
+        android:id="@+id/frameLayoutForUser"
+        >
+
+
+
+    <ImageView
+        android:id="@+id/userImageView"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/username"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/users"
+        />
+
+    <TextView
+        android:id="@+id/userUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="@string/username"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/interactionId"
+        android:text="@string/username"
+        android:layout_below="@+id/frameLayoutForUser"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interactionId"
+        android:id="@+id/visitLocationId"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:text="@string/username"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visitLocationId"
+        android:id="@+id/tripSelectionId"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:text="@string/username"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForAdmin.Dashboard">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dashboard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:id="@+id/textokId"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textokId"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#D5D0D0"
+        android:id="@+id/userMessageId"
+        android:clickable="true"
+        android:focusableInTouchMode="false"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/wman"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/username" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trip_message"
+            android:layout_marginTop="70dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textokId"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#D5D0D0"
+        android:id="@+id/addPlacesID"
+        android:clickable="true"
+        android:focusableInTouchMode="false"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/plus"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/username" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_place"
+            android:layout_marginTop="70dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/addPlacesID"
+        android:layout_marginTop="300dp"
+        android:text="@string/sign_out"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/signOutForAdId"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>

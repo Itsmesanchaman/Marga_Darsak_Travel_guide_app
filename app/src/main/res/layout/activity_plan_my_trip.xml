@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlanMyTrip"
+    >
+
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/cancel"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/cancelToId"
+        android:contentDescription="@string/username"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/wman"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/username"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/pyt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:id="@+id/plantripId"
+        />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plantripId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#046057"
+        android:id="@+id/seekbarId"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/seekbarId"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/how_will_you_be_travelling"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/dark_green"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:background="@drawable/button_background_selected"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="60dp"
+        tools:ignore="RtlSymmetry"
+        android:textStyle="bold"
+        android:drawableTop="@drawable/usery"
+        android:paddingTop="20dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="@string/travelling_solo"
+        android:id="@+id/travellingSoloId"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:background="@drawable/button_background_selected"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="220dp"
+        android:paddingTop="20dp"
+        tools:ignore="RtlSymmetry"
+        android:textSize="18sp"
+        android:drawableTop="@drawable/two"
+        android:textStyle="bold"
+        android:text="@string/travelling_couple"
+        android:id="@+id/travellingCoupleId"
+        android:textAllCaps="false"
+        />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/travellingFamilyId"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:drawableTop="@drawable/family"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="260dp"
+                android:paddingTop="20dp"
+                android:background="@drawable/button_background_selected"
+                android:text="@string/family_travelling"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:background="@drawable/button_background_selected"
+                android:layout_marginTop="260dp"
+                android:layout_marginStart="220dp"
+                tools:ignore="RtlSymmetry"
+                android:paddingTop="20dp"
+                android:drawableTop="@drawable/group"
+                android:textStyle="bold"
+                android:text="@string/group_travelling"
+                android:id="@+id/travellingGroupId"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+            />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/adultLayout"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/travellingGroupId"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="50dp"
+                android:visibility="gone"
+                android:layout_marginEnd="25dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/adultEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:hint="@string/no_of_adult"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/childLayout"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/travellingGroupId"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginEnd="25dp"
+                android:visibility="gone"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/childEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:hint="@string/chld"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/con"
+                android:layout_below="@+id/adultLayout"
+                android:textAllCaps="false"
+                android:backgroundTint="#16AC9E"
+                android:textColor="@color/white"
+                android:id="@+id/continueId"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/how_it_works"
+                android:layout_below="@+id/continueId"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/howitId"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/howitId"
+                android:layout_marginStart="20dp"
+                android:text="@string/_1"
+                android:textSize="20sp"
+                android:id="@+id/oneId"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/oneId"
+                android:layout_marginStart="20dp"
+                android:text="@string/_2"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit_your_travel_plan"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/howitId"
+                android:layout_marginStart="80dp"
+                android:id="@+id/submitId"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/details"
+                android:textSize="12sp"
+                android:layout_below="@id/submitId"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="80dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/get_an_expert_s_help"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/howitId"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="85dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tc"
+                android:textSize="12sp"
+                android:layout_below="@id/submitId"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="85dp"
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

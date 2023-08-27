@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PlaceDetails.Annapurna">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/FrameLayoutId"
+        >
+
+        <ImageView
+            android:id="@+id/backtoAnn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/previous"
+            android:src="@drawable/previous"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/heart"
+            android:background="@drawable/circle_shape"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/saveBtn"
+            android:contentDescription="@string/saves"
+            />
+
+    </FrameLayout>
+
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/FrameLayoutId"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="410dp"
+            android:layout_height="match_parent"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:id="@+id/sccId"
+                >
+
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/annapurnaId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/facebook"
+                    android:scaleType="fitXY"
+                    app:iss_auto_cycle="true"
+                    app:iss_delay="2000"
+                    app:iss_period="2000"
+                    tools:ignore="MissingConstraints" />
+
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/annapurna_base_camp"
+                android:layout_below="@+id/sccId"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dex"
+                android:layout_marginTop="370dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textSize="19sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/annapurnades"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginEnd="30dp"
+                android:textColor="@color/black"
+                android:id="@+id/imgDes"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_map"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/viewMapId"
+                android:layout_below="@+id/imgDes"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tonaya"
+                android:layout_below="@+id/dayOne"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/dayTwo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toGhore"
+                android:layout_below="@+id/dayTwo"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/dayThree"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sunrise"
+                android:layout_below="@+id/dayThree"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/dayFour"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tada"
+                android:layout_below="@+id/dayFour"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/dayFive"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dobhan"
+                android:layout_below="@+id/dayFive"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/daySix"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dovan"
+                android:layout_below="@+id/daySix"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/daySeven"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mbc"
+                android:layout_below="@+id/daySeven"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/dayEight"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ABC"
+                android:layout_below="@+id/dayEight"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/dayNine"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bamboo"
+                android:layout_below="@+id/dayNine"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/dayTen"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hot"
+                android:layout_below="@+id/dayTen"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/dayEleven"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/To"
+                android:layout_below="@+id/dayEleven"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/dayTwelve"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/drive"
+                android:layout_below="@+id/dayTwelve"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/dayThirteen"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/topker"
+                android:layout_below="@+id/viewMapId"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/dayOne"
+                />
+
+            <FrameLayout
+                android:id="@+id/trekMapLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/dayThirteen"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trek_itinerary_map"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/iconImage"
+                    android:src="@drawable/down"
+                    android:layout_marginStart="325dp"
+                    android:visibility="visible"
+                    android:contentDescription="@string/username"
+                    />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:src="@drawable/annapurnatrek"
+                    android:layout_marginTop="45dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/mapTrekId"
+                    android:visibility="gone"
+                    android:contentDescription="@string/username"
+                    />
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
